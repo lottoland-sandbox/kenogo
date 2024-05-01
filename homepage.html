@@ -154,6 +154,7 @@ function getUrlParameter(name) {
         
 // PAGE DISPLAY TRACKING *****
 var Feature = 'homepage';
+var Domain="www.kenogo.com.au"   
 var utmCampaign = getUrlParameter('utm_campaign');
 var utmSource = getUrlParameter('utm_source');
 var utmMedium = getUrlParameter('utm_medium');
@@ -161,6 +162,7 @@ var Promo = getUrlParameter('promo');
 var Affiliate = getUrlParameter('affiliate_id');
 var event_properties = {
     'Feature': Feature,
+    'Domain': Domain,
     'Id': 'homepage',
     'Category': '',
     'Display Type': 'pageLoad',
