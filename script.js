@@ -196,7 +196,7 @@ function trackButtonClick(event) {
         var trackOffer = target.getAttribute('data-track-offer') || '';
         var trackGenre = target.getAttribute('data-track-genre') || '';
         var trackProduct = target.getAttribute('data-track-product') || '';
-
+        var trackPosition = target.getAttribute('data-track-position') || '';
 
         // Construct event properties object
         var event_properties = {
@@ -209,6 +209,7 @@ function trackButtonClick(event) {
             Offer: trackOffer,
             Genre: trackGenre,
             Product: trackProduct,
+            Position: trackPosition,
         };
 
         // Fire amplitude tracking with 'click' event type
